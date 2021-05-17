@@ -1,4 +1,7 @@
 # Guiding-Map-of-Nu-
+Screen Shots are 
+![image](https://user-images.githubusercontent.com/65865851/118493492-cc65a180-b73e-11eb-8294-01de2f050c70.png)
+![image](https://user-images.githubusercontent.com/65865851/118493677-fcad4000-b73e-11eb-8ae1-50f0da76f053.png)
 
 Index:
 1. Introduction 
@@ -218,6 +221,8 @@ We have used this for storing the data of all the user’s data such as the user
 
 6.5. OpenStreetMap:  Our maps have been imported from this Map API where we have imported it from open source. 
 OpenStreetMap Map  
+![image](https://user-images.githubusercontent.com/65865851/118493283-8f99aa80-b73e-11eb-99a0-514bf0d27536.png)
+
 
 After Editing with the Leaflet
                    
