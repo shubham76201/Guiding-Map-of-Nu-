@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<style>
+    form {
+        background-color: #aeecff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px;
+        height: 100%;
+        text-align: center;
+    }
+    
+</style>
+<link rel="stylesheet" href="{% static 'style1.css' %}">{% endblock css %}
+{% block tag1 %}<li><a style="font-family: 'Ubuntu Condensed', sans-serif; " href="login/signin">Sign-in </a></li> {% endblock tag1 %}
+{% block title %} 
+Signup
+   {% endblock %}
+{% block content %}
+
+<body class=" body1">
+    <div class="container" id="container">
+
+        <div class="form-container sign-in-container">
+            <form style="background-color: #76dfff;" action="signup" method="post">
+                {% csrf_token %}
+                <h1 style="font-family: 'Ubuntu Condensed', sans-serif; " >SIGN UP </h1>
+                
+                <span style="font-family: 'Ubuntu Condensed', sans-serif; ">or use your account</span>
+
+                <input style="background-color: rgb(218, 248, 255);border:1px solid black;border-radius:5px" type="name" placeholder="Name" name="firstname1" />
+                <input style="background-color: rgb(218, 248, 255);border:1px solid black;border-radius:5px" type="name" placeholder="College Enrollment No." name="uni_enroll1" />
+                <input style="background-color: rgb(218, 248, 255);border:1px solid black;border-radius:5px"type="name" placeholder="Lastname" name="lastname1" />
+                <input style="background-color: rgb(218, 248, 255);border:1px solid black;border-radius:5px"type="email" placeholder="University Email" name="email"/>
+                <input style="background-color: rgb(218, 248, 255);border:1px solid black;border-radius:5px"type="phone" placeholder="Phone no." name="phone"/>
+                <input style="background-color: rgb(218, 248, 255);border:1px solid black;border-radius:5px"type="password" placeholder="Password" name="password" />
+                
+                    <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {% endblock content %}
